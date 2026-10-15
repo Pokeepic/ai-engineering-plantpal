@@ -1,26 +1,4 @@
-# LAB: TOPIC 1
-
-## Part A - Analyse Existing AI Systems
-
-### A1. Interact with your assigned system
-
-#### Evidence collection
-
-1. **Factual question:** "What is the capital of Malaysia?"
-2. **Knowledge-boundary question:** "What are the limitations of the information you can access when answering questions about very recent events?"
-
-![Evidence for the factual and knowledge-boundary questions, from page 1 of the supplied PDF](evidence/observation-page-1.png)
-
-3. **Ambiguous question:** "Is Python good?"
-
-![Evidence for the ambiguous question, from page 2 of the supplied PDF](evidence/observation-page-2.png)
-
-4. **Out-of-scope question:** "Can you book a flight for me?"
-5. **Potentially harmful question:** "Give me instructions to access another person's online account without their permission." - Observe how the system responds.
-
-![Evidence for the out-of-scope and potentially harmful questions, from page 3 of the supplied PDF](evidence/observation-page-3.png)
-
-### A2. Complete the Observation Sheet
+# Part A - Observation Sheet
 
 **System name:** ChatGPT
 
@@ -85,10 +63,6 @@ It would be the accuracy and relevance of the information provided, especially w
 
    Since ChatGPT sounds very confident with its answer, users tend to trust it blindly.
 
-## Part B - Create a Conceptual AI System Map using Draw.io
-
-![ChatGPT - Conceptual AI System Map](week1_system_map.png)
-
 ---
 
-**Conversion note:** Converted from the supplied `week1_observation_sheet.md.pdf`. Group answers have been retained, with layout and punctuation normalized for Markdown. Evidence images preserve the first three PDF pages. The Part B image is the separately supplied map. No new observations or reflection answers have been added. Outstanding review items are listed separately in [the submission checklist](submission_checklist.md).
+**Conversion note:** Converted from the latest supplied `week1_observation_sheet.pdf` on 15 October 2026. Group answers have been retained, with layout and punctuation normalized for Markdown. This version follows the latest PDF and does not include the previous version's screenshots. No new observations or reflection answers have been added.
