@@ -62,7 +62,7 @@ evaluation/   Future evaluation questions and results
 prompts/      Future versioned prompts
 ```
 
-The [ChatGPT system map](docs/week1_system_map.png) and [observation sheet](docs/week1_observation_sheet.md) are Part A/B group work about an existing system. They are not PlantPal's architecture or test results.
+The [ChatGPT system map](docs/week1_system_map.png) and [observation sheet](docs/week1_observation_sheet.md) are Part A/B group work about an existing system. They are not PlantPal's architecture or test results. The [group reflections](docs/group_reflections.md) contain the supplied Part A and Part B reflections.
 
 ## Weekly Progress
 
