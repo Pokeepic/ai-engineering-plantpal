@@ -2,7 +2,7 @@
 
 > A planned AI assistant that answers beginner home-gardening questions using official gardening documents and verifiable citations.
 
-**Status:** Week 1 project scoping. The AI application has not been implemented.
+**Status:** Week 2 Part A requirements specified. The AI application has not been implemented.
 
 ## Problem Statement
 
@@ -69,5 +69,6 @@ The [ChatGPT system map](docs/week1_system_map.png) and [observation sheet](docs
 | Week | Focus | Deliverable | Status |
 |---|---|---|---|
 | W1 | Project scope and repository; preserve group evidence | README, scope, observation sheet, system map | Prepared; group-evidence review and course-portal submission remain |
+| W2 | Part A: framing, scope, and requirements | [Requirements specification](docs/week2_requirements.md) | Part A documented; Parts B and C pending; implementation and evaluation not started |
 
 See [submission checklist](docs/submission_checklist.md) for remaining items. Do not commit credentials, personal conversation logs, or restricted documents.
