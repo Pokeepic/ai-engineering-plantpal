@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="PlantPal V1" id="plantpal-v1">
+    <mxGraphModel page="1" pageWidth="1800" pageHeight="1250">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="PlantPal | V1 Conceptual Architecture" style="text;html=0;align=left;verticalAlign=top;fontSize=42;fontColor=#183b50;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="40" width="1680" height="60" />
+        </mxCell>
+        <mxCell id="sub" value="Document-grounded tropical home gardening | Topic 2, Part C | 24 October 2026" style="text;html=0;align=left;verticalAlign=top;fontSize=24;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="105" width="1680" height="50" />
+        </mxCell>
+        <mxCell id="legend" value="Grey: interaction     Orange: controls     Green: knowledge     Blue: AI     Purple: evaluation" style="text;html=0;align=left;verticalAlign=top;fontSize=22;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="157" width="1680" height="50" />
+        </mxCell>
+        <mxCell id="A1" value="A1  Home gardener&#10;&#10;English questions&#10;Plant + growing context&#10;No account required&#10;&#10;O1 / O2" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e8eef2;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="250" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A2" value="A2  Text interface&#10;&#10;Submit / follow up&#10;Temporary session state&#10;Display answer or error&#10;&#10;FR3 / FR5 / NFR3" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e8eef2;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="410" y="250" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A3" value="A3  Input controls&#10;&#10;Scope + context check&#10;Remove / block PII&#10;Before external calls&#10;&#10;FR3 / FR4 / RAI2-4" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff0d8;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="760" y="250" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A4" value="A4  Knowledge access&#10;&#10;Find relevant passages&#10;Retain source + page&#10;Check coverage limits&#10;&#10;FR1 / FR2 / RAI1 / RAI4" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e3f4e7;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110" y="250" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A5" value="A5  Approved sources&#10;&#10;Curated NParks PDFs&#10;Source/version register&#10;Permitted local copies&#10;&#10;O1 / FR1 / FR2" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e3f4e7;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1460" y="250" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A6" value="A6  Language service&#10;&#10;Sanitised query + context&#10;Draft plain-English answer&#10;Treat passages as data&#10;&#10;FR1 / FR5 / NFR1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1efff;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110" y="620" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A7" value="A7  Answer controls&#10;&#10;Check support + citations&#10;Apply scope boundaries&#10;Abstain / error if needed&#10;&#10;FR2 / FR4 / RAI1 / RAI2" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff0d8;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="760" y="620" width="280" height="200" />
+        </mxCell>
+        <mxCell id="A8" value="A8  Response delivery&#10;&#10;Answer + source pages&#10;Clarification / limitation&#10;Refusal or clear error&#10;&#10;FR2-FR5 / NFR3 / NFR4" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e8eef2;strokeColor=#69808e;fontSize=21;fontColor=#17364a;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="410" y="620" width="280" height="200" />
+        </mxCell>
+        <mxCell id="e1" source="A1" target="A2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" source="A2" target="A3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" source="A3" target="A4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" source="A5" target="A4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" source="A4" target="A6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5label" value="Sanitised query +&#10;source-tagged passages" style="text;html=0;align=left;verticalAlign=top;fontSize=18;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1280" y="497" width="330" height="65" />
+        </mxCell>
+        <mxCell id="e6" source="A6" target="A7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" source="A7" target="A8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" source="A8" target="A2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8label" value="Display result" style="text;html=0;align=left;verticalAlign=top;fontSize=18;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="575" y="520" width="330" height="65" />
+        </mxCell>
+        <mxCell id="e9" source="A3" target="A7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9label" value="Clarify / decline&#10;without generation" style="text;html=0;align=left;verticalAlign=top;fontSize=18;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="920" y="497" width="330" height="65" />
+        </mxCell>
+        <mxCell id="e10" source="A4" target="A7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#486578;strokeWidth=2;endArrow=block;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1150" y="575" />
+              <mxPoint x="1030" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10label" value="Insufficient&#10;evidence" style="text;html=0;align=left;verticalAlign=top;fontSize=18;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1060" y="580" width="330" height="65" />
+        </mxCell>
+        <mxCell id="loop" value="Responses appear in A2.&#10;The gardener can clarify&#10;and submit another query." style="text;html=0;align=left;verticalAlign=top;fontSize=24;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="635" width="320" height="150" />
+        </mxCell>
+        <mxCell id="failure" value="Service failures return a clear error via A7 / A8. No fabricated fallback answer." style="text;html=0;align=left;verticalAlign=top;fontSize=23;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="410" y="860" width="1300" height="50" />
+        </mxCell>
+        <mxCell id="A9" value="A9  Evaluation and minimal diagnostics (cross-cutting)&#10;Test A2-A8: correctness, grounding, clarification, scope, clarity, privacy, latency, reliability.&#10;Record test IDs, scores, timings, versions and redacted errors; no persistent raw user chats.&#10;Inspect outgoing payloads with synthetic identifiers; retain only sanitised test evidence.&#10;Links: O3 | NFR1-NFR4 | RAI1-RAI4 | Part B evaluation criteria" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f0e8fa;strokeColor=#8c76a7;fontSize=25;align=left;spacing=20;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="950" width="1680" height="230" />
+        </mxCell>
+        <mxCell id="foot" value="Conceptual design only. Components express capabilities; vendors, frameworks and deployment remain undecided." style="text;html=0;align=left;verticalAlign=top;fontSize=21;fontColor=#183b50;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1202" width="1680" height="50" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

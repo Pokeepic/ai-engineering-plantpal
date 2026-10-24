@@ -2,7 +2,7 @@
 
 > A planned AI assistant that answers beginner home-gardening questions using official gardening documents and verifiable citations.
 
-**Status:** Week 2 Parts A and B documented. The AI application has not been implemented.
+**Status:** Week 2 Parts A, B, and C documented. The AI application has not been implemented.
 
 ## Problem Statement
 
@@ -69,6 +69,6 @@ The [ChatGPT system map](docs/week1_system_map.png) and [observation sheet](docs
 | Week | Focus | Deliverable | Status |
 |---|---|---|---|
 | W1 | Project scope and repository; preserve group evidence | README, scope, observation sheet, system map | Prepared; group-evidence review and course-portal submission remain |
-| W2 | Parts A and B: requirements and evaluation criteria | [Requirements](docs/week2_requirements.md), [Evaluation criteria](docs/week2_evaluation_criteria.md) | Parts A and B documented; Part C pending; implementation and evaluation not started |
+| W2 | Requirements, evaluation criteria, and V1 architecture | [Requirements](docs/week2_requirements.md), [Evaluation criteria](docs/week2_evaluation_criteria.md), [Architecture diagram](docs/week2_architecture_v1.png), [Decisions and traceability](docs/week2_architecture_decisions.md) | Parts A-C documented; implementation and evaluation not started |
 
 See [submission checklist](docs/submission_checklist.md) for remaining items. Do not commit credentials, personal conversation logs, or restricted documents.
