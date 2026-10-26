@@ -47,6 +47,8 @@ Official NParks documents, linked from its [resource directory](https://gardenin
 
 Links checked on 14 October 2026. Third-party gardening PDFs are not redistributed in this repository.
 
+See the [dataset and data-source reference shortlist](docs/dataset_references.md) for additional plant-care datasets, access links, limitations, and recommended uses. Additional sources are candidates for review and have not been admitted to the answer corpus.
+
 ## Scope and Responsible AI
 
 Focus on documented light, watering principles, growing media, and space requirements. No image diagnosis, pesticide dosages, ingestion guidance, automated watering, or safety guarantees. Proposed controls include source checks, clarification, abstention, and minimal collection of user information.
