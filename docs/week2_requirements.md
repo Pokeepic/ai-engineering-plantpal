@@ -1,8 +1,8 @@
 # Requirements Specification - PlantPal
 
-**Version:** 1.0
+**Version:** 1.1
 
-**Date:** 24 October 2026
+**Date:** 26 October 2026
 
 **Project:** PlantPal - Document-Grounded Home Gardening Assistant
 
@@ -25,7 +25,7 @@ These sources support the practical gardening problem. They do not establish dem
 |---|---|---|
 | NParks GardeningSG articles and downloadable guides [1, 2, 3] | Provide authoritative gardening information for readers to consult. | Readers must locate and combine relevant sections themselves. This is an assessment of the document-reading workflow, not a measured usability result. |
 | NParks Plant Suggestions [4] | Provides a form for suggesting plants based on garden conditions. | Its stated purpose is plant selection. PlantPal will focus on complementary care explanations and follow-up questions linked to source passages; the form's internal implementation has not been assessed. |
-| Lewis et al. (2020), *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* [5] | Studies combining external knowledge retrieval with language generation. | The study does not establish performance for this tropical gardening use case. Appropriate sources, page citations, scope controls, and domain evaluation still need to be specified. |
+| Lewis et al. (2020), *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* [5] | Studies combining external knowledge retrieval with language generation. | The study does not establish performance for this tropical gardening use case. PlantPal's requirements, evaluation criteria, and conceptual architecture specify these capabilities; source coverage, implementation, and performance still need to be verified. |
 
 ### Limitation (Gap)
 
@@ -35,9 +35,15 @@ AI is appropriate for interpreting differently worded questions and combining re
 
 ### Objectives
 
-- **O1 - Design:** Define PlantPal's supported tasks, approved source collection, scope boundaries, and testable requirements for beginner tropical home gardening.
-- **O2 - Develop:** Develop a text-based assistant that provides document-grounded answers with verifiable citations, clarification, and appropriate refusal or abstention.
-- **O3 - Evaluate:** Evaluate correctness, clarity, groundedness, latency, and responsible behaviour, and compare evidence access with a keyword-search baseline on the same approved documents.
+**Overall aim:** Develop and evaluate a document-grounded gardening assistant that helps beginner tropical home gardeners understand plant-care guidance relevant to their growing conditions.
+
+- **O1 - Identify and design:** Identify beginner gardeners' information needs and establish a verified gardening source collection covering light, watering principles, growing media, and space, using the findings to define supported tasks, scope boundaries, and testable requirements.
+- **O2 - Develop:** Develop a text-based retrieval-augmented assistant that retrieves relevant gardening guidance, explains it in plain language with verifiable document and page citations, and asks for clarification, refuses excluded requests, or acknowledges insufficient evidence when appropriate.
+- **O3 - Evaluate:** Evaluate answer correctness, citation support, clarity, response time, and handling of unsupported and out-of-scope questions; compare users' success and time to a correct, source-supported answer with keyword search over the same approved documents.
+
+### O1 Evidence and Completion
+
+O1 is not complete merely because the requirements are written. Before finalising the supported tasks, record findings from a small set of beginner-gardener interviews or observed information-finding tasks, distinguishing observed needs from assumptions. Verify candidate documents' provenance, permitted use, readable text, page references, and topic/species coverage; publish the supported coverage list and use it to prepare reference scenarios. These activities are planned, and no findings or completed corpus are claimed.
 
 ### Users
 
@@ -65,7 +71,7 @@ Only relevant home-gardening material will be admitted to the prototype corpus. 
 
 ### Operating Context
 
-A single-user student prototype, demonstrated through a simple text interface on a laptop with internet access. Development and evaluation will use Google Colab when coding begins. The same session may retain temporary conversational context, but no account or persistent personal profile is required. V1 architecture and specific technologies will be selected in later work; this specification defines behaviour rather than prescribing a model or database.
+A single-user student prototype, demonstrated through a simple text interface on a laptop with internet access. Development and evaluation will use Google Colab when coding begins. The same session may retain temporary conversational context, but no account or persistent personal profile is required. The [conceptual V1 architecture and design decisions](week2_architecture_decisions.md) are documented in Part C. Specific implementation technologies remain undecided; this specification defines behaviour rather than prescribing a model or database.
 
 ### Constraints
 
@@ -140,7 +146,7 @@ Acceptance scenarios include a documented care question (FR1), tracing a claim t
 
 | Objective | Supporting requirements | Later evidence |
 |---|---|---|
-| O1 - Design | FR1-FR4, RAI2, RAI4 | Approved corpus and coverage list; reference scenarios; scope-boundary review. |
+| O1 - Identify and design | FR1-FR4, RAI2, RAI4 | Documented user-needs findings; verified source register and coverage list; reference scenarios; scope-boundary review. |
 | O2 - Develop | FR1-FR5, NFR1, NFR3, RAI1-RAI4 | Demonstrated answer, citation, clarification, refusal, and privacy behaviours. |
 | O3 - Evaluate | NFR1-NFR4, RAI1-RAI4 | Scored evaluation cases, latency records, privacy checks, failure analysis, and comparison with keyword search. |
 
@@ -156,4 +162,4 @@ RAI1, transparency and grounding, is likely to be the most difficult requirement
 4. National Parks Board. *Plant suggestions*. https://gardeningsg.nparks.gov.sg/new-to-gardening/plant-suggestions/
 5. Lewis, P., et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*. NeurIPS 33. https://arxiv.org/abs/2005.11401
 
-References carry forward the sources identified in the [Week 1 project scope](week1_project_scope.md). Topic 2 Parts B and C will map these requirements to evaluation criteria and a justified conceptual architecture.
+References carry forward the sources identified in the [Week 1 project scope](week1_project_scope.md). Topic 2 [Part B](week2_evaluation_criteria.md) maps these requirements to evaluation criteria, and [Part C](week2_architecture_decisions.md) documents the conceptual architecture, design decisions, and traceability. User-needs validation, corpus preparation, implementation, and evaluation remain pending.

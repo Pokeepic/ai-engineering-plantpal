@@ -2,7 +2,7 @@
 
 > A planned AI assistant that answers beginner home-gardening questions using official gardening documents and verifiable citations.
 
-**Status:** Week 2 Parts A, B, and C documented. The AI application has not been implemented.
+**Status:** Week 2 Parts A, B, and C documented. Objectives and progress statements revised on 26 October 2026. User-needs validation, corpus preparation, application implementation, and evaluation remain pending.
 
 ## Problem Statement
 
@@ -27,9 +27,11 @@ Investigate whether a focused, document-cited conversational interface improves 
 
 ## Project Objectives
 
-- **O1:** Design the scope, source collection, and reference-answer evaluation set.
-- **O2:** Develop a text-based retrieval-augmented prototype with citations and guardrails.
-- **O3:** Evaluate accuracy, groundedness, citations, latency, and scope handling against a search baseline.
+**Overall aim:** Develop and evaluate a document-grounded gardening assistant that helps beginner tropical home gardeners understand plant-care guidance relevant to their growing conditions.
+
+- **O1 - Identify and design:** Identify beginner gardeners' information needs and establish a verified gardening source collection covering light, watering principles, growing media, and space, using the findings to define supported tasks, scope boundaries, and testable requirements.
+- **O2 - Develop:** Develop a text-based retrieval-augmented assistant that retrieves relevant gardening guidance, explains it in plain language with verifiable document and page citations, and asks for clarification, refuses excluded requests, or acknowledges insufficient evidence when appropriate.
+- **O3 - Evaluate:** Evaluate answer correctness, citation support, clarity, response time, and handling of unsupported and out-of-scope questions; compare users' success and time to a correct, source-supported answer with keyword search over the same approved documents.
 
 ## Target Users
 

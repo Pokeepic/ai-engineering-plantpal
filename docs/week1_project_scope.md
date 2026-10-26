@@ -4,7 +4,7 @@
 
 **Domain:** Home gardening / horticulture
 
-**Status:** Preliminary semester project scope, 14 October 2026
+**Status:** Preliminary semester project scope, 14 October 2026. Objectives and progress statements revised on 26 October 2026; the preliminary evaluation plan below is retained as Week 1 history.
 
 ## Problem Statement
 
@@ -17,7 +17,7 @@ The initial context is tropical indoor and balcony gardening, using Singapore-fo
 1. **Choosing suitable plants requires environmental knowledge.** NParks explains that plants grown in unsuitable environments become more vulnerable to pests, disease, and death [1]. This supports the need to consider growing conditions when explaining plant choices.
 2. **Indoor gardening involves several constraints.** NParks' indoor gardening guide discusses space, light, water, and plant choice [2, PDF page 5]. Its guidance illustrates why a single question may require considering several factors together.
 
-These sources establish practical gardening considerations. They do not prove that beginners want a chatbot or that PlantPal improves outcomes. User needs and the proposed interface will be validated in the next project stage; no interviews or surveys have been conducted for this scope.
+These sources establish practical gardening considerations. They do not prove that beginners want a chatbot or that PlantPal improves outcomes. User-needs validation and interface testing remain planned; no interviews or surveys have been conducted for this scope.
 
 ## Initial Related Work / Existing Approaches
 
@@ -25,17 +25,19 @@ These sources establish practical gardening considerations. They do not prove th
 |---|---|---|
 | NParks GardeningSG articles and downloadable guides [1, 2, 3] | Authoritative reference material for learning plant care. | Readers must locate and combine the relevant sections themselves. This is a project assessment of the reading workflow, not a measured usability result. |
 | NParks Plant Suggestions [4] | A form provides plant suggestions based on garden conditions. | Its stated purpose is plant selection; PlantPal proposes complementary, document-cited explanations and follow-up care questions. No claim is made about the form's internal algorithm. |
-| Lewis et al. (2020), Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks [5] | Combines retrieval from external knowledge with generated answers. | General NLP research does not establish performance for tropical home gardening. Corpus selection, citations, clarification, and domain-specific evaluation still need to be designed and tested. |
+| Lewis et al. (2020), Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks [5] | Combines retrieval from external knowledge with generated answers. | General NLP research does not establish performance for tropical home gardening. Requirements, evaluation criteria, and a conceptual architecture are documented in Week 2; corpus preparation, implementation, and testing remain pending. |
 
 ## Engineering Gap / Limitation
 
 The proposed gap is a narrowly scoped conversational interface that connects a beginner's growing conditions to supporting passages across approved gardening documents, identifies missing information, and makes unsupported questions explicit. PlantPal will investigate this gap; it does not claim that no similar commercial tool exists or that retrieval eliminates hallucinations.
 
-## Initial Project Objectives
+## Project Objectives
 
-- **O1 - Design:** Define a document-grounded gardening assistant, including target questions, a source register, supported topics, and a small reference-answer evaluation set.
-- **O2 - Develop:** Implement a text-based retrieval-augmented prototype that produces source-cited answers, asks clarifying questions, and abstains when evidence is insufficient.
-- **O3 - Evaluate:** Compare the prototype with a keyword-search baseline on factual accuracy, groundedness, citation correctness, latency, and handling of unsupported or unsafe requests.
+**Overall aim:** Develop and evaluate a document-grounded gardening assistant that helps beginner tropical home gardeners understand plant-care guidance relevant to their growing conditions.
+
+- **O1 - Identify and design:** Identify beginner gardeners' information needs and establish a verified gardening source collection covering light, watering principles, growing media, and space, using the findings to define supported tasks, scope boundaries, and testable requirements.
+- **O2 - Develop:** Develop a text-based retrieval-augmented assistant that retrieves relevant gardening guidance, explains it in plain language with verifiable document and page citations, and asks for clarification, refuses excluded requests, or acknowledges insufficient evidence when appropriate.
+- **O3 - Evaluate:** Evaluate answer correctness, citation support, clarity, response time, and handling of unsupported and out-of-scope questions; compare users' success and time to a correct, source-supported answer with keyword search over the same approved documents.
 
 ## Target Users
 
@@ -97,9 +99,11 @@ PlantPal addresses plant-care questions for home gardeners instead of academic r
 
 ## Preliminary Evaluation Plan
 
+This section records the original Week 1 proposal. The current test inventory, thresholds, and keyword-search comparison are defined in the [Week 2 requirements](week2_requirements.md) and [evaluation criteria](week2_evaluation_criteria.md), which supersede this preliminary plan.
+
 Build a manually reviewed set of 40 questions: 24 answerable care questions, 8 ambiguous questions, and 8 unsupported or out-of-scope questions. Annotate expected facts, supporting pages, and whether clarification or abstention is appropriate. Keep development questions separate from final evaluation questions.
 
-Provisional targets, to refine in Topic 2 (not achieved results):
+Original Week 1 targets, subsequently refined in Topic 2 (not achieved results):
 
 - At least 85% of answerable questions satisfy a predefined factual-answer rubric.
 - At least 90% of factual claims are supported by the cited passages.

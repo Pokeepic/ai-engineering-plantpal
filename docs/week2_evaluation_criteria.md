@@ -1,8 +1,8 @@
 # Evaluation Criteria - PlantPal
 
-**Version:** 1.0
+**Version:** 1.1
 
-**Date:** 24 October 2026
+**Date:** 26 October 2026
 
 **Status:** Topic 2, Part B evaluation plan. The prototype has not been evaluated. All thresholds below are proposed acceptance criteria, not measured results.
 
@@ -10,9 +10,13 @@
 
 This plan defines how to assess whether PlantPal provides useful, understandable, source-supported guidance for beginner tropical home gardeners. It follows the [Part A requirements specification](week2_requirements.md), retaining its requirement IDs, test-set sizes, and acceptance thresholds.
 
-- **O1 - Design:** Define the supported tasks, approved sources, scope boundaries, and testable requirements.
-- **O2 - Develop:** Develop a text-based assistant with grounded answers, citations, clarification, and appropriate refusal or abstention.
-- **O3 - Evaluate:** Evaluate correctness, clarity, groundedness, latency, and responsible behaviour, and compare evidence access with keyword search.
+**Overall aim:** Develop and evaluate a document-grounded gardening assistant that helps beginner tropical home gardeners understand plant-care guidance relevant to their growing conditions.
+
+- **O1 - Identify and design:** Identify beginner gardeners' information needs and establish a verified gardening source collection covering light, watering principles, growing media, and space, using the findings to define supported tasks, scope boundaries, and testable requirements.
+- **O2 - Develop:** Develop a text-based retrieval-augmented assistant that retrieves relevant gardening guidance, explains it in plain language with verifiable document and page citations, and asks for clarification, refuses excluded requests, or acknowledges insufficient evidence when appropriate.
+- **O3 - Evaluate:** Evaluate answer correctness, citation support, clarity, response time, and handling of unsupported and out-of-scope questions; compare users' success and time to a correct, source-supported answer with keyword search over the same approved documents.
+
+O1 completion evidence is the user-needs record, verified source register, coverage list, and traceable requirements described in [Part A](week2_requirements.md#o1-evidence-and-completion). The response-level metrics below assess O2 and O3; they do not establish that user-needs validation has been completed.
 
 The capability buckets are those specified in the lab: domain-specific capability, generation capability, instruction-following capability, and cost and latency. The final bucket is used for latency here; no cost threshold is invented because Part A does not define an approved spending budget.
 
@@ -82,6 +86,6 @@ This is an exploratory comparison, not an additional acceptance threshold. Parti
 
 Answer correctness is the most important criterion for determining whether PlantPal is useful to its intended users. A fast, clear explanation can still lead a beginner to make an unsuitable care decision if it gives the wrong information about light, water, or growing conditions. Correctness therefore needs to be checked against approved documents and the conditions in the question. Citation support is a closely related requirement: it enables users to inspect the basis of an answer, but a citation alone does not make the answer correct. PlantPal should meet both correctness and grounding targets, while also passing its safety and privacy criteria; a high overall score must not conceal a serious failure in another category.
 
-## Next Step
+## Current Progress and Next Steps
 
-Use these criteria and the linked Part A requirements to justify PlantPal's conceptual V1 architecture in Part C. Evaluation implementation, collected results, and architecture decisions remain future work.
+The [conceptual V1 architecture, design decisions, and traceability](week2_architecture_decisions.md) are documented in Part C. Next, validate user needs, verify source coverage, choose implementation technologies, prepare the reference test sets and keyword-search study procedure, and implement the prototype and evaluation harness. No application implementation, participant data, or evaluation results are claimed.
